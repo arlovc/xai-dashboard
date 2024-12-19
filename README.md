@@ -31,14 +31,16 @@ For more functionality, optional files can be supplied. If these are not supplie
 1. The dashboard will launch on a specific port which will be displayed in the terminal. To use the dashboard, navigate to https://jupyter.ilt.rijkscloud.nl/user/username/proxy/portnumber/
 1. If this is the first time using the dashboard with a model, SHAP values must be calculated and loaded. To do that, simply click on the 'Calculate SHAP button'. If the dataset is large, the dashboard might time-out. If that happens, just restart the Dashboard and the SHAP explainer should be there. Remember to Load everytime the dashboard is started. 
 1. If there is a calibration set available, type the target variable (column name) in the lowest textbox and then click on 'Train Non-Conformal Classifier'. Now the Confidence Interval metric will be available, too.
->>>>>>> README.md
+
 
 ### Use case with Screenshots
 
 Below some screenshots from the Dashboard on some potential uses of different pages and plots. The model described here is used to detect end-of-life ships that need to be inspected because they might be illegally scrapped otherwise. For starters we can investigate basic model performance and global feature importance using SHAP. 
 
-![Receiver Operating Characteristic curve](screenshots/ROC.png)
-![Global Shap bar plot. Blue is negative, red is positive impac t on score.](screenshots/global_shap_bar.png)
+#![Receiver Operating Characteristic curve](screenshots/ROC.png)
+<img src="https://github.com/arlovc/xai-dashboard/raw/main/screenshots/global_shap_bar.png" width="300" height="600">
+
+#![Global Shap bar plot. Blue is negative, red is positive impact on score.](screenshots/global_shap_bar.png)
 
 
 We notice that physical characteristics of ships play an important role. Let's dive deeper to see how they influence the model score. 
