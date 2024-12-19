@@ -48,11 +48,11 @@ We can get a slighltly detailed understanding if we look at at a beeswarm plot. 
 
 If we plot a 3D partial dependency plot, we see the direct relationship between model score and features. We can now clearly observe that young, large ships score the lowest, while old, small ships have the highest inspection risk associated with them. We can also dig deeper to find the years that define these groups, with a SHAP partial dependency plot. 
 
-<img src="https://github.com/arlovc/xai-dashboard/raw/main/screenshots/PDP_tonnage.png" width="400" height="400">
-<img src="https://github.com/arlovc/xai-dashboard/raw/main/screenshots/SHAP_PDP.png" width="400" height="400">
+<img src="https://github.com/arlovc/xai-dashboard/raw/main/screenshots/PDP_tonnage.png" width="500" height="400">
+<img src="https://github.com/arlovc/xai-dashboard/raw/main/screenshots/SHAP_PDP.png" width="500" height="400">
 
 We notice a clear distinction between ships built before 1975 and afterwards, with larger ships being built more recently. However there is an interaction between small and large, young ships, and perhaps other features will differentiate these subgroups even further. 
 
 Another reason why our model might treat young ships in a different way than older ones, is due to the splits in the train/test datasets. In the Data Analysis page of the Dashboard, you can get at a glance difference in statistics between datasets and some histogram plots. In this case, we notice a skew in the train set towards younger ships, while the test set has significantly lower numbers of young ships. 
-<img src="https://github.com/arlovc/xai-dashboard/raw/main/screenshots/stats.png" width="400" height="400">
-<img src="https://github.com/arlovc/xai-dashboard/raw/main/screenshots/stats_hist.png" width="400" height="400">
+<img src="https://github.com/arlovc/xai-dashboard/raw/main/screenshots/stats.png" width="400" height="300">
+<img src="https://github.com/arlovc/xai-dashboard/raw/main/screenshots/stats_hist.png" width="400" height="300">
