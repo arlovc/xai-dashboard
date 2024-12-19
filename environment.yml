@@ -1,0 +1,18 @@
+#might be that it's not the best idea to fix these, but let's see..
+name: xai_dashboard8
+dependencies:
+  - python=3.8.5
+  - numpy=1.20.3
+  - pandas=1.2.5
+  - matplotlib=3.5.0
+  - plotly=5.4.0
+  - pip=21.3.1
+  - joblib=1.1.0
+  - pip:
+    - streamlit=1.2.0
+    - shap=0.40.0
+    - sklearn
+    - ipykernel=6.5.1
+    - nonconformist=2.1.0
+    - streamlit-aggrid # =0.2.2.post4 only if necessary
+    - xgboost
